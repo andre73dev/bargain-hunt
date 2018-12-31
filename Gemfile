@@ -11,7 +11,7 @@ gem 'rails', '4.2.6'
 gem 'pg' , '~> 0.20.0'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+#gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -52,11 +52,20 @@ gem "anemone"
 # https://github.com/jugend/amazon-ecs
 gem 'amazon-ecs'
 gem 'rename'
+
 gem 'bootstrap', '~> 4.1.3'
+#gem 'bootstrap-sass', '~> 3.1.7'
+#gem 'bootstrap-sass', '~> 3.1.7'
+gem 'sass-rails', '>= 3.2'
+#gem 'bootstrap-sass', '~> 3.3.6'
+#gem 'autoprefixer-rails'
 
 # Use jquery as the JavaScript library 
-#gem 'jquery-rails'
-gem 'jquery-rails' ,'4.3.3' #bootstrap ver
+gem 'jquery-rails'
+#gem 'jquery-rails' ,'4.3.3' #bootstrap ver
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-#gem 'turbolinks' bootstrap導入時にエラー利用しない
+gem 'turbolinks'
+
+# Autoprefixer doesn’t support Node v4.3.2. Update it.の回避の為
+gem 'mini_racer' 
