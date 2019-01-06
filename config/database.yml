@@ -34,4 +34,6 @@ test:
 production:
   <<: *default
   database: app_development
+  encoding: unicode
+  pool: 5
 #  database: db/production.sqlite3
