@@ -1,0 +1,4 @@
+h1 今日の掘り出し物
+.ul.list-group.list-group-flush
+ = render partial: 'item', collection: @items
+= paginate @items

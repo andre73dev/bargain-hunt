@@ -24,5 +24,8 @@ module BargainHunt
     config.active_record.raise_in_transactional_callbacks = true
     
     config.time_zone = 'Tokyo'
+    
+    #kaminari locale
+    config.i18n.default_locale = :ja    
   end
 end

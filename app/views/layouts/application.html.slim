@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta charset="UTF-8"
+    meta http-equiv="X-UA-Compatible" content="IE=Edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+  
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track'=> 'reload'
+    = csrf_meta_tags
+
+    title 掘り出し物３６５
+
+body
+  header
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"
+        span.navbar-toggler-icon
+      div.collapse.navbar-collapse#navbarToggler
+        ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+          li.nav-item.active
+            a.nav-link href="#" Home
+              <span class="sr-only">(current)</span>
+          li.nav-item
+            a.nav-link href="#" about
+
+div.container
+  == yield

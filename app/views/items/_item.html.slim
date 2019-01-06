@@ -1,0 +1,13 @@
+.li.list-group-item
+  .media 
+    = image_tag item.medium_image1,:size => "128x128"
+    .media-body
+      h4.ml-1 #{item.item_name.truncate(40)} 
+      p
+        span.badge.badge-success.ml-2 #{item.genre_root_name} ランキングﾞ #{item.rank_past.to_s} 位(#{item.item_update_past.strftime('%m/%d 00:00付')})
+        span.badge.badge-warning.ml-2 #{item.genre_name}
+      h5.ml-1 
+        span.font-weight-bold.text-danger #{item.calc_price_per_past_price} 
+        | #{number_with_delimiter(item.item_price_past.to_s.to_d.floor)}円 → 
+        | #{number_with_delimiter(item.item_price.to_s.to_d.floor)}円 (#{item.created_at.strftime('%m/%d %H:%M更新')})
+      a.btn.btn-info.ml-1 href="#{item.item_url}" role ="button" 最新の商品情報      

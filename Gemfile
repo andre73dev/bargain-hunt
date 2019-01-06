@@ -41,6 +41,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  #gem 'web-console'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -68,4 +69,13 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Autoprefixer doesn’t support Node v4.3.2. Update it.の回避の為
-gem 'mini_racer' 
+gem 'mini_racer'
+
+# https://github.com/rakuten-ws/rws-ruby-sdk#ichiba-item-ranking
+gem 'rakuten_web_service'
+
+#pagenation用
+gem 'kaminari'
+
+#https://qiita.com/ftyabu/items/42eb62901b6b56a7dc72
+gem 'slim-rails'
