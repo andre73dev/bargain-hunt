@@ -39,7 +39,7 @@ namespace :rakuten_item do
   task :dataset_now => :environment do
 
     #sleep(3600)
-    RakutenItem.delete_all #全削除
+    RakutenLatestItem.delete_all #全削除
 
     #過去の商品から最新の商品情報をセットする
     setRakutenItemData_lastest(3)
