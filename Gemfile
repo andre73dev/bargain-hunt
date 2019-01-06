@@ -79,3 +79,5 @@ gem 'kaminari'
 
 #https://qiita.com/ftyabu/items/42eb62901b6b56a7dc72
 gem 'slim-rails'
+
+gem 'rails_12factor', group: :production #heroku H10 App crach
