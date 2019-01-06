@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-
+#ruby '2.4.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 
 #gem 'sqlite3', group: :development
@@ -80,4 +80,4 @@ gem 'kaminari'
 #https://qiita.com/ftyabu/items/42eb62901b6b56a7dc72
 gem 'slim-rails'
 
-gem 'rails_12factor', group: :production #heroku H10 App crach
+gem 'rails_12factor', group: :production #heroku deploy
