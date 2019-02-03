@@ -8,6 +8,8 @@ html
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track'=> 'reload'
     = csrf_meta_tags
+    
+    = analytics_init if Rails.env.production? 
 
     title 掘り出し物３６５
 
@@ -25,5 +27,4 @@ body
           li.nav-item
             a.nav-link href="#" about
 
-div.container
   == yield

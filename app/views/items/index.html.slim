@@ -1,4 +1,6 @@
-h1 今日の掘り出し物
-.ul.list-group.list-group-flush
- = render partial: 'item', collection: @items
-= paginate @items
+div.container-fluid
+  h1 今日の掘り出し物
+  div.row
+    div#card
+     = render partial: 'item', collection: @items
+     = paginate @items

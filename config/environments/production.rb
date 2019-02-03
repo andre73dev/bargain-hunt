@@ -79,4 +79,6 @@ Rails.application.configure do
 
   config.assets.initialize_on_precompile = true
   
+  #Google analytics
+  GA.tracker = "UA-567321-13"
 end

@@ -81,3 +81,8 @@ gem 'kaminari'
 gem 'slim-rails'
 
 gem 'rails_12factor', group: :production #heroku deploy
+
+gem 'google-analytics-rails', group: :production
+
+
+

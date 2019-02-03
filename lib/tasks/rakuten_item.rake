@@ -19,20 +19,18 @@ namespace :rakuten_item do
 
   #全カテゴリのTop30商品をセットする  
   task :dataset => :environment do
+
+    RakutenItem.delete_all #全削除
+
     root_genres = RakutenWebService::Ichiba::Genre.root
 
-#begin
     root_genres.children.each do |child_genre|
-
-#      p 'genres ' + "#{child_genre.id}"
-
       #ジャンル毎のランキングと商品情報をセット
       setRakutenItemData("#{child_genre.id}")
     end
-#end
+
       #ジャンル毎のランキングと商品情報をセット
 #      setRakutenItemData("112493")
-
   end
 
   #過去のTop30商品の最新情報をセットする  
