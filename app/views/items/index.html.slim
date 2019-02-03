@@ -1,6 +1,6 @@
 div.container-fluid
   h1 今日の掘り出し物
   div.row
-    div#card
-     = render partial: 'item', collection: @items
-     = paginate @items
+    div#card.wh-100
+      = render partial: 'item', collection: @items
+  = paginate @items

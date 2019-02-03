@@ -5,6 +5,11 @@ body {margin:2rem;}
   padding-bottom: 1rem;
 }
 
+
+div#card {
+  width: 100%;
+}
+
 .card-left {
   width: 133px;
 }
@@ -17,7 +22,7 @@ body {margin:2rem;}
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.75rem;    
+    font-size: 1.5rem;    
   }
   .card-right {
     font-size: 0.5rem;    
